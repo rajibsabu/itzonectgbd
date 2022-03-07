@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="stu-form">
+        <h4>Fill The Form</h4>
+        <form autocomplete="off" onsubmit="onFormSubmit()">
+            <div>
+                <label for="id">Student Id</label><br>
+                <input type="text" name="id" id="id" placeholder="Type Your id"><br>
+            </div>
+            <div>
+                <label for="name">Student Name</label><br>
+                <input type="text" name="name" id="name"  placeholder="Type Your name"><br>
+            </div>
+            <div>
+                <label for="dept">Department</label><br>
+                <input type="text" name="dept" id="dept" placeholder="Type Your Department"><br>
+            </div>
+            <div>
+                <label for="semester">Semester</label><br>
+                <input type="number" name="semester" id="semester" placeholder="Type Your semester"><br>
+            </div>
+
+            <div class="form_action--button">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+
+    </div>
+    <div class="table-heading"><h2><u> Data Table</u></h2></div>
+
+    <table>
+        <tr>
+            <td>
+                
+                <td>
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                <th>Student Id</th>
+                                <th>Student Name</th>
+                                <th>Department</th>
+                                <th>Semester</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
